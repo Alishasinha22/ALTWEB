@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTWEB - Free website Directory 🌸</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="day-mode">
+    <!-- Sakura Blossoms Container -->
+    <div id="sakura-container"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <i class="fas fa-blossom"></i> ALTWEB
+                    <span class="logo-sub">Free website Directory</span>
+                </h1>
+                <p class="tagline">Curated free alternatives to paid websites</p>
+            </div>
+            
+            <!-- Controls -->
+            <div class="controls">
+                <div class="theme-toggle">
+                    <button id="theme-toggle" class="theme-btn" aria-label="Toggle day/night mode">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <span class="theme-slider"></span>
+                    </button>
+                    <span class="theme-label">Day Mode</span>
+                </div>
+                
+                <div class="blossom-control">
+                    <button id="blossom-toggle" class="control-btn" title="Toggle cherry blossoms">
+                        <i class="fas fa-wind"></i> Blossoms
+                    </button>
+                    <span class="blossom-count">25</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Search and Filter Section -->
+            <section class="search-section">
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="search-input" placeholder="Search websites, categories, or tags...">
+                        <button id="clear-search" class="clear-btn" title="Clear search">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="favorites-toggle">
+                        <button id="favorites-toggle" class="favorites-btn">
+                            <i class="far fa-heart"></i> Show Favorites
+                        </button>
+                        <span id="favorites-count" class="favorites-count">0</span>
+                    </div>
+                </div>
+                
+                <!-- Category Filters -->
+                <div class="category-filters">
+                    <button class="category-btn active" data-category="all">
+                        <i class="fas fa-globe"></i> All
+                    </button>
+                    <button class="category-btn" data-category="A">
+                        <i class="fas fa-graduation-cap"></i> Education
+                    </button>
+                    <button class="category-btn" data-category="B">
+                        <i class="fas fa-briefcase"></i> Jobs
+                    </button>
+                    <button class="category-btn" data-category="C">
+                        <i class="fas fa-paint-brush"></i> Productivity
+                    </button>
+                    <button class="category-btn" data-category="D">
+                        <i class="fas fa-book-open"></i> Knowledge
+                    </button>
+                    <button class="category-btn" data-category="E">
+                        <i class="fas fa-video"></i> Content Creation
+                    </button>
+                    <button class="category-btn" data-category="F">
+                        <i class="fas fa-film"></i> Streaming
+                    </button>
+                    <button class="category-btn" data-category="G">
+                        <i class="fas fa-globe-asia"></i> Regional
+                    </button>
+                    <button class="category-btn" data-category="H">
+                        <i class="fas fa-gamepad"></i> Leisure
+                    </button>
+                </div>
+            </section>
+
+            <!-- Stats -->
+            <div class="stats">
+                <span id="total-count">34</span> websites • 
+                <span id="showing-count">34</span> showing
+            </div>
+
+            <!-- Websites Grid -->
+            <section class="websites-grid" id="websites-container">
+                <!-- Cards will be generated by JavaScript -->
+                <div class="loading">
+                    <div class="blossom-loading">
+                        <i class="fas fa-blossom"></i>
+                        <i class="fas fa-blossom"></i>
+                        <i class="fas fa-blossom"></i>
+                    </div>
+                    <p>Loading beautiful websites...</p>
+                </div>
+            </section>
+
+            <!-- No Results -->
+            <div id="no-results" class="no-results" style="display: none;">
+                <i class="fas fa-blossom"></i>
+                <h3>No websites found</h3>
+                <p>Try a different search or category</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <i class="fas fa-blossom"></i> 
+                ALTWEB: website Directory •  
+                A frontend web application that helps users discover free and freemium alternatives to popular software and platforms, featuring categorized listings, client-side search, filters, and sorting. </br>
+                •Curated by CSE Student •
+                <span id="current-year">2024</span>
+            </p>
+            <p class="footer-note">
+                All websites are free alternatives to paid services. Bookmark your favorites!
+            </p>
+            <p class="footer-note">
+                This platform only redirects users to third-party websites. ALTWEB does not host or stream any content.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
